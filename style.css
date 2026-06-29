@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* bg video */
+#lockscreen{
+    height: 100vh;
+    width:100vw;
+}
+.video-bg {
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit:cover;
+            z-index: -1;
+}
+/* numpad */
+
+.numpad-container{
+    position: absolute;
+    top: 15vh;
+    left:70vw;
+    
+}
+.numpad{
+    display:grid;
+    grid-template-columns:repeat(3,80px);
+    gap:10px;
+    justify-content:center;
+}
+
+#display{
+    grid-column:1 / 4; /* span all 3 columns */
+    height:50px;
+    font-size:24px;
+    color: white;
+    text-align:center;
+    background-color: transparent;
+    border-radius:1rem;
+    border-color: aqua;
+
+}
+
+.numpad button{
+    height:80px;
+    font-size:24px;
+    cursor:pointer;
+    color:aquamarine;
+    background-color: transparent;
+    border-radius: 50%;
+    border-color: aqua;
+    font-family: 'Pacifico', cursive;
+}
+::placeholder{
+    font-size: 1rem;
+    color: rgb(92, 138, 178);
+}
+
+button:hover{
+    background-color: aqua;
+    color: black;
+
+}
+
+button:active{
+    background-color: transparent;
+    color: aqua;
+}
+
+/* pageswitch */
+.page{
+    display: none;
+}
+
+.page.active{
+    display: block;
+}
+
+/* skyshot button */
+#btn,#btn2,#btn3{
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+      background: linear-gradient(270deg, rgb(0, 111, 78), #2e6569, #506563, #ffdde1);
+       background: linear-gradient(90deg, rgb(0, 109, 146), #523468, #96488d, #6e343b);
+      background-size: 600% 600%;
+    animation: gradientMove 3s ease infinite;
+       font-family: 'Pacifico', cursive;
+}
+@keyframes gradientMove{
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+
+#btn:hover{
+    animation: gradientMove 3s ease infinite;
+    background: linear-gradient(45deg, rgb(11, 0, 16), #3d145a, #c8c4d0, #ffdde1);
+}
+
+/* page 3 */
+
+#page3{
+   height: 100vh;
+    width: 100vw;
+
+    background-image: url("bgimage.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.page3-content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.birthday-img,.wishing,.date{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.birthday-img img{
+    height: 85vh;
+    width: 25vw;
+    border-radius: 30px;
+}
+
+
+
+.wishing video{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    /* margin-right: 3vw ; */
+
+
+}
+
+.date img{
+    height: 85vh;
+    width: 25vw;
+    border-radius: 30px;
+}
+
+
+/* page 4 */
+
+#page4.active{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("photos/bg2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.giftsection{
+    height: 60vh;
+    width: 70vw;
+    /* background-color: #96488d; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.gift{
+    height: 30vh;
+    width: 15vw;
+    background-image: url('photos/giftclose.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#page5.active{
+    height: 200vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page5 img{
+  height: 100%;
+  width: 80%;
+}
+
+#page5.active button{
+    position: absolute;
+    color: wheat;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+}

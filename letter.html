@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Letter For You ❤️</title>
+    <link rel="stylesheet" href="letter.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<button onclick="goBack()" id="backBtn">⬅ Back</button>
+
+<div class="letter-container">
+
+    <div class="letter-paper">
+
+        <h1>My Dearest Cutie,</h1>
+
+        <p>
+            Happy Birthday to the most beautiful soul who makes my world brighter every single day. ❤️
+        </p>
+
+        <p>
+            From the moment you came into my life, everything changed. 
+            You turned my ordinary days into unforgettable memories. 
+            Your smile, your voice, your little silly things — everything about you has my heart completely.
+        </p>
+
+        <p>
+            You’re not just my girlfriend,  
+            you’re my best friend, my safe place,  
+            my biggest blessing.
+        </p>
+
+        <p>
+            Thank you for being you.  
+            Thank you for loving me the way you do.  
+            Thank you for staying, for understanding,  
+            and for making even the hard days easier.
+        </p>
+
+        <p>
+            I promise to always be there for you,  
+            to hold your hand through every up and down,  
+            and to love you in every version of your life.
+        </p>
+
+        <p>
+            I love you more than words can ever explain.
+        </p>
+
+        <h2>Forever and Always ❤️</h2>
+
+    </div>
+
+</div>
+
+<script>
+function goBack(){
+    const params = new URLSearchParams(window.location.search);
+    const returnPage = params.get("return");
+    window.location.href = "html.html#" + returnPage;
+}
+</script>
+
+</body>
+</html>

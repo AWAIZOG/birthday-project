@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cutie's birthday</title>
+    <link rel="icon" href="icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- lockscreen page -->
+<div id="lockscreen" class="page active">
+        <video autoplay muted loop class="video-bg">
+            <source src="bg video.mp4" type="video/mp4">
+            
+        </video>
+        
+    <div class="numpad-container">
+       
+
+       <div class="numpad">
+        <input type="password" id="display" placeholder="Enter the code sweetheart">
+        <button onclick="addNum('1')">1</button>
+        <button onclick="addNum('2')">2</button>
+        <button onclick="addNum('3')">3</button>
+
+        <button onclick="addNum('4')">4</button>
+        <button onclick="addNum('5')">5</button>
+        <button onclick="addNum('6')">6</button>
+
+        <button onclick="addNum('7')">7</button>
+        <button onclick="addNum('8')">8</button>
+        <button onclick="addNum('9')">9</button>
+
+        <button onclick="clearPass()">C</button>
+        <button onclick="addNum('0')">0</button>
+        <button onclick="checkPass()">✓</button>
+       </div>
+    </div>
+    
+</div>
+
+<!-- sky shot page2 -->
+<div id="page2" class="page">
+    <video id="skyVideo"  class="video-bg">
+    <source src="skyshots.mp4" type="video/mp4">
+</video>
+
+    <button id="btn" onclick="showPage('page3')"> Click Here Cutie! </button>
+   
+</div>
+
+
+<!-- page 3 wishing -->
+
+<div id="page3" class="page">
+
+    <div class="page3-content">
+
+         <div class="date">
+           <img src="photos/hpy.png" alt="birthday photo"> 
+        </div>
+
+        <div class="wishing">
+            <video id="wishVideo" >
+    <source src="wishing.mp4" type="video/mp4">
+</video>
+        </div>
+
+        <div class="birthday-img">
+            <img src="photos/mygirl.png" alt="Birthday Photo">
+        </div>
+
+       
+        
+        <button id="btn2" onclick="showPage('page4')"> Next>></button>
+
+    </div>
+
+</div>
+
+<!-- page 4 opening gifts -->
+<div id="page4" class="page">
+  <h1>Gifts for my cutie 💕</h1>
+  <div class="giftsection">
+    <div id="gift1" class="gift" onclick="openGift(this,'love.html')"></div>
+    <div id="gift2" class="gift" onclick="openGift(this,'game.html')"></div>
+    <div id="gift4" class="gift" onclick="openGift(this,'page5')"></div>
+    <div id="gift4" class="gift" onclick="openGift(this,'photo.html')"></div>
+  </div>
+</div>
+
+<div id="page5" class="page">
+   
+    <img src="photos/letter.png" alt="Birthday Photo">
+    <button class="btn3" onclick="showPage('page4')">Back</button>
+
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+
+</html>

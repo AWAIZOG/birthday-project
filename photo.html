@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Booth ❤️</title>
+    <link rel="stylesheet" href="photo.css">
+</head>
+<body>
+<button onclick="goBack()" id="backBtn">⬅ Back</button>
+
+<h1> Our Little Love Booth 💕</h1>
+
+<!-- Left Decorations -->
+<div class="decor left">
+    <img src="photos/img9.png">
+    <img src="photos/Subject.png">   
+    <img src="photos/img2.png">
+    
+</div>
+
+<!-- Booth -->
+<div class="machine">
+
+    <div class="camera-box">
+        <video id="video" autoplay></video>
+
+        <div class="overlay">
+            🎀 💕 🌸 ✨ 🩷
+        </div>
+
+        <div id="countdown"></div>
+
+        <!-- Flash -->
+        <div id="flash"></div>
+    </div>
+
+    <div class="controls">
+        <select id="filter">
+            <option value="none">Normal</option>
+            <option value="grayscale(1)">B&W</option>
+            <option value="sepia(1)">Vintage</option>
+            <option value="brightness(1.2)">Bright</option>
+        </select>
+
+        <button id="startBtn">Start Session</button>
+        <button id="printBtn">Print Strip</button>
+        <button id="downloadBtn">Download</button>
+    </div>
+
+    <div class="printer-slot"></div>
+</div>
+
+<!-- Right Decorations -->
+<div class="decor right">
+    <img src="photos/img10.png">
+    <img src="photos/img11.png">
+    <img src="photos/img12.png">
+    
+    \
+</div>
+
+<!-- Printed Strip -->
+<div id="output"></div>
+
+<canvas id="canvas"></canvas>
+
+<script src="photo.js"></script>
+
+</body>
+</html>

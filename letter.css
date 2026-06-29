@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background: url("photos/letterbg.jpg") no-repeat center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+/* dark warm overlay */
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: rgba(0,0,0,0.35);
+}
+
+/* back button */
+#backBtn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* letter */
+.letter-container{
+    position: relative;
+    z-index: 2;
+}
+
+.letter-paper{
+    width: 700px;
+    min-height: 800px;
+    background: rgba(245, 222, 179, 0.93);
+    padding: 60px;
+    border-radius: 12px;
+
+    box-shadow:
+    0 0 30px rgba(255,200,150,0.3),
+    0 0 80px rgba(255,150,100,0.15);
+
+    animation: floatPaper 4s ease-in-out infinite;
+}
+
+/* title */
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    text-align:center;
+    margin-bottom: 40px;
+    color: #4b1f12;
+}
+
+/* paragraphs */
+p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #2f140d;
+    margin-bottom: 30px;
+}
+
+/* ending */
+h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-align:center;
+    margin-top: 40px;
+    color: #5b1f2e;
+}
+
+/* floating effect */
+@keyframes floatPaper{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

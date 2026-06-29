@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Video ❤️</title>
+    <link rel="stylesheet" href="love.css">
+</head>
+<body>
+
+    <button onclick="goBack()" id="backBtn">⬅ Back</button>
+
+    <video class="love" autoplay >
+        <source src="photos/love.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        function goBack(){
+            const params = new URLSearchParams(window.location.search);
+            const returnPage = params.get("return");
+
+            window.location.href = "html.html#" + returnPage;
+        }
+    </script>
+
+</body>
+</html>
